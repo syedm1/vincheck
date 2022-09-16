@@ -46,10 +46,20 @@ export default function Index() {
                   style={{
                     minHeight: "65px",
                     minWidth: "340px",
-                    marginBottom: "2vh",
                   }}
                 />
-                <a
+                <button
+                  className="bg-indigo-500 text-white active:bg-indigo-600 font-bold uppercase text-base px-8 py-3 rounded-full shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                  type="button"
+                  style={{
+                    marginTop: "2px",
+                    marginLeft: "6px",
+                    minWidth: "150px",
+                  }}
+                >
+                  {siteContent[0].button.label}
+                </button>
+                {/* <a
                   href={siteContent[0].button.link}
                   className="github-star ml-1 text-white font-bold px-6 py-4  outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
                   target="_blank"
@@ -58,7 +68,7 @@ export default function Index() {
                   }}
                 >
                   {siteContent[0].button.label}
-                </a>
+                </a> */}
               </div>
               <div
                 style={{
