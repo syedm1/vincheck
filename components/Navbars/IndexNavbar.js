@@ -59,13 +59,12 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 <IndexDropdown />
               </li>
-              <li className="flex items-center">Written off check</li>
 
-              <li className="flex items-center">Finance check</li>
-              <li className="flex items-center">Stolen Check</li>
-              <li className="flex items-center">Rego </li>
               <li className="flex items-center">
-                <FontAwesomeIcon icon="question-circle" />
+                <FontAwesomeIcon
+                  icon="fa-solid fa-car"
+                  style={{ minHeight: "85px", paddingLeft: "5px" }}
+                />
               </li>
               <li
                 className="flex items-center"
@@ -75,7 +74,83 @@ export default function Navbar(props) {
                   flexDirection: "column",
                 }}
               >
-                <p>PPSR</p>
+                <p style={{ fontWeight: 700 }}>Writen off</p>
+                <span
+                  style={{
+                    display: "table",
+                    lineBreak: "normal",
+                    whiteSpace: "pre",
+                  }}
+                >
+                  {"\n Check"}
+                </span>
+              </li>
+
+              <li className="flex items-center">
+                <FontAwesomeIcon
+                  icon="fa-solid fa-eye-slash"
+                  style={{ minHeight: "85px", paddingLeft: "5px" }}
+                />
+              </li>
+              <li
+                className="flex items-center"
+                style={{
+                  lineHeight: 1.6,
+                  padding: "20px",
+                  flexDirection: "column",
+                }}
+              >
+                <p style={{ fontWeight: 700 }}>Stolen</p>
+                <span
+                  style={{
+                    display: "table",
+                    lineBreak: "normal",
+                    whiteSpace: "pre",
+                  }}
+                >
+                  {"\n Check"}
+                </span>
+              </li>
+              <li className="flex items-center">
+                <FontAwesomeIcon
+                  icon="fa-solid fa-dollar-sign"
+                  style={{ minHeight: "85px", paddingLeft: "5px" }}
+                />
+              </li>
+              <li
+                className="flex items-center"
+                style={{
+                  lineHeight: 1.6,
+                  padding: "20px",
+                  flexDirection: "column",
+                }}
+              >
+                <p style={{ fontWeight: 700 }}>Finance</p>
+                <span
+                  style={{
+                    display: "table",
+                    lineBreak: "normal",
+                    whiteSpace: "pre",
+                  }}
+                >
+                  {"\n Check"}
+                </span>
+              </li>
+              <li className="flex items-center">
+                <FontAwesomeIcon
+                  icon="fa-solid fa-file-pdf"
+                  style={{ minHeight: "85px", paddingLeft: "5px" }}
+                />
+              </li>
+              <li
+                className="flex items-center"
+                style={{
+                  lineHeight: 1.6,
+                  padding: "20px",
+                  flexDirection: "column",
+                }}
+              >
+                <p style={{ fontWeight: 700 }}>PPSR</p>
                 <span
                   style={{
                     display: "table",
@@ -87,14 +162,14 @@ export default function Navbar(props) {
                 </span>
               </li>
 
-              <li className="flex items-center">
+              {/* <li className="flex items-center">
                 <button
                   className="bg-blueGray-700 text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                   type="button"
                 >
                   <i className="fas fa-arrow-alt-circle-down"></i> Download
                 </button>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
