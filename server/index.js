@@ -25,6 +25,15 @@ app.prepare().then(() => {
     res.send("OK")
   })
 
+  server.use("/callVinCheck",(req, res)=>{
+    const MAX_VIN_LENGTH = 18
+    if(req.query?.vinNumber && req.query?.vinNumber?.length < MAX_VIN_LENGTH){
+      res.send("good vin")
+    }
+
+    res.send("check called")
+  })
+
   server.get('*', (req, res) => {
     return handler(req, res)
   })
